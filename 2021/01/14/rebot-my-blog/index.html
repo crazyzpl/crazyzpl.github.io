@@ -12,7 +12,7 @@
 
 
 
-<title>test | CrazyZPL&#39;s blog</title>
+<title>rebot my blog | CrazyZPL&#39;s blog</title>
 
 
 
@@ -107,11 +107,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">test</h1>
+            <h1 class="post-title">rebot my blog</h1>
             
                 <div class="post-meta">
                     
@@ -120,7 +182,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">January 14, 2021&nbsp;&nbsp;18:48:13</a>
+                        Date: <a href="#">January 14, 2021&nbsp;&nbsp;19:22:50</a>
                         </span>
                     
                     
@@ -129,7 +191,9 @@
         </header>
 
         <div class="post-content">
-            
+            <h1 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h1><p>今天怎么说呢，弄得很不顺利，参考了很多很多的教程重新开始搭建我的blog，但是都不是很顺利很成功，有点小烦。其实白天就已经都搭建好了但是部署上莫名奇妙的出了问题———我的github仓库竟然变成了空的，导致我情急之下删了我下午写了好久的“第一篇文章”，着实感觉到了头疼，再加上老师对我的骚扰所以我现在更烦了。。。</p>
+<p>就先搞到这里吧，明天看看有没有心情重新弄一下我的这篇blog。希望能够看到我的这篇。。。</p>
+
         </div>
 
         
@@ -143,7 +207,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2021/01/14/test/">http://example.com/2021/01/14/test/</a></span>
+                        <span><a href="http://example.com/2021/01/14/rebot-my-blog/">http://example.com/2021/01/14/rebot-my-blog/</a></span>
                     </p>
                 
                 
@@ -176,10 +240,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/01/14/rebot-my-blog/">rebot my blog</a>
             
-            
-            <a class="next" rel="next" href="/2021/01/14/hello-world/">Hello World</a>
+            <a class="next" rel="next" href="/2021/01/14/test/">test</a>
             
         </section>
 
