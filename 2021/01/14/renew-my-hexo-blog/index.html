@@ -12,7 +12,7 @@
 
 
 
-<title>Hello World | CrazyZPL&#39;s blog</title>
+<title>renew my hexo blog | CrazyZPL&#39;s blog</title>
 
 
 
@@ -173,7 +173,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">renew my hexo blog</h1>
             
                 <div class="post-meta">
                     
@@ -182,7 +182,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">January 14, 2021&nbsp;&nbsp;18:46:27</a>
+                        Date: <a href="#">January 14, 2021&nbsp;&nbsp;15:06:34</a>
                         </span>
                     
                     
@@ -191,15 +191,35 @@
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <h1 id="重新搭建自己的HEXO-GitHub个人博客"><a href="#重新搭建自己的HEXO-GitHub个人博客" class="headerlink" title="重新搭建自己的HEXO+GitHub个人博客"></a>重新搭建自己的HEXO+GitHub个人博客</h1><p>我记得去年上半年我就已经利用hexo+github搭建了一个个人博客了，但是中间荒废了九个月（看过我的后台记录以后），还是觉得挺可惜的，当时还壮志凌云的想要在我的个人博客上记录我所有的生活，结果。。。</p>
+<p>不过这次既然我已经决定要好好管理我的博客了那我希望能够坚持到底好吧。</p>
+<h2 id="1、搭建过程"><a href="#1、搭建过程" class="headerlink" title="1、搭建过程"></a>1、搭建过程</h2><p>搭建过程其实没什么好说的，随便Google或者百度都可以搜到很多，这里可以列出来一个我觉得还是很有用的一个教程<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">GitHub+Hexo 搭建个人网站详细教程</a>这个人讲的真的是超级的详细，我中间碰到了很多的问题有一些就是在这篇里面找到的。下面想说几点我觉得很重要的可能会出错的地方。</p>
+<ol>
+<li><p>hexo其实可以被安装下载到你电脑上的任何地方（当然我还是觉得在固态上会非常好），这里不得不说我之前买了一个闪存盘，计划寒假回家看愿不愿意试一试把hexo搭建到我的闪存盘上，不过可能还会涉及到一些基础的搭建，比如<strong>Git</strong>和<strong>Node.js</strong>。搭建过程其实还是比较简单的，下面主要是想说一些常用的命令</p>
+<blockquote>
+<p>hexo n(new) “标题”  新建文章</p>
+</blockquote>
+<blockquote>
+<p>hexo g(generate)    生成文件</p>
+</blockquote>
+<blockquote>
+<p>hexo s(server)  启动服务预览</p>
+</blockquote>
+<blockquote>
+<p>hexo d(deploy)  部署</p>
+</blockquote>
+<blockquote>
+<p>hexo clean  清除缓存</p>
+</blockquote>
+</li>
+<li><p>按照教程里面说的配置好文件被在启动服务预览后发现可以在网页中正常打开后，接下来就是准备把一切打包部署到Github的仓库中去了，这里我按着教程上走其实并不知道怎么部署上去的，以及GitHub仓库里面到底我的文件结构会是什么样子的，后续看情况可能会去了解一下。然后就是非常重要的，当你 <strong>hexo s</strong> 启动服务预览发现成功以后，我自己的经验，一定要再 <strong>hexo clean</strong> 一下以后，最后再生成兵部署（hexo g, hexo d）。做完这一切后输入你自己设定的网址就可以看到经典的”landscape”主题首页的你的博客了。</p>
+</li>
+<li><p>后面就是主题设定部分了，一开始我在网上搜换主题教程的时候一直遇到很多问题。首先目前很多教程都推荐使用NexT主题，我看了一下觉得确实还是挺不错的，但是在安装完成以后，我在部署的时候我的GitHub却并没有像端口服务预览展示出来的一样显示出我现在的主题样式，这一点所有我搜到的换主题教程中都没有提示。后来经过我的尝试，必须要先 hexo clean，然后再hexo g, hexo d才能够实现出来，我也不知道是碰上了什么bug。再然后是在新主题里面换那个啥头像啊更改名称啊的时候出现了问题，就是不能同步更新，这个在我搜索之后了解到要在站点文件下的_config.yml文件中把对应的属性值改成true，这样就可以了</p>
+</li>
+<li><p>最后，我最终选择的主题并不是NexT，而是一个”<strong>Siricee</strong>“大佬做的主题<strong>Chic</strong>，实话说这个主题我当时一眼相中，于是便用了，这里附上大佬的链接<a target="_blank" rel="noopener" href="https://github.com/Siricee">大佬链接</a>。希望看到我这个blog的人能从大佬那获得很多东西。</p>
+</li>
+</ol>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这次的内容就弄到这里算了，今天彻底弄完以后重新学了一下MarkDown的简单使用便开始了，希望以后能坚持下来吧，坚持一个月至少一篇blog！</p>
 
         </div>
 
@@ -214,7 +234,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2021/01/14/hello-world/">http://example.com/2021/01/14/hello-world/</a></span>
+                        <span><a href="http://example.com/2021/01/14/renew-my-hexo-blog/">http://example.com/2021/01/14/renew-my-hexo-blog/</a></span>
                     </p>
                 
                 
@@ -247,10 +267,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/01/14/test/">test</a>
+                <a class="prev" rel="prev" href="/2021/01/14/hello-world/">Hello World</a>
             
-            
-            <a class="next" rel="next" href="/2021/01/14/renew-my-hexo-blog/">renew my hexo blog</a>
             
         </section>
 
